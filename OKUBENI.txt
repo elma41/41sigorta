@@ -1,0 +1,16 @@
+41 SIGORTA WEB SITESI - YUKLEME
+1) Bu klasorun ICINDEKI tum dosyalari (index.html, .htaccess, robots.txt, sitemap.xml, hizmetler/, bolgeler/, assets/ ...)
+   hostinginizdeki web kok klasorune (Plesk: httpdocs) yukleyin.
+2) Yayina almadan once doldurun:
+   - kvkk.html: [Acente ticari unvani] ve [Acik adres]
+   - Alt bilgi: Sigorta acentesi levha kayit numarasi ("LEVHA KAYIT NO" yorumu)
+3) SEO: Yayindan sonra Google Search Console'a www.41sigorta.com'u ekleyip sitemap.xml'i gonderin;
+   Google Isletme Profili (Google Haritalar) kaydi acip web sitesini baglayin.
+4) Teklif formu ek sunucu gerektirmez: bilgiler WhatsApp mesaji olarak 0540 433 41 41'e gider.
+
+UZANTISIZ ADRESLER
+------------------
+Sayfa adresleri ".html" olmadan çalışır (örn. 41sigorta.com/hizmetler/kasko).
+Bunu .htaccess dosyası sağlar; Plesk'in varsayılan Apache + nginx ayarıyla çalışır.
+Eski ".html" adresleri otomatik ve kalıcı (301) olarak yeni adreslere yönlenir.
+Not: .htaccess gizli dosyadır; yüklerken silinmediğinden emin olun.

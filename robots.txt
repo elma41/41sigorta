@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /assets/dosyalar/*.tmp
+
+Sitemap: https://www.41sigorta.com/sitemap.xml
