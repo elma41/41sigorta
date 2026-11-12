@@ -1,0 +1,19 @@
+Fotoğraflar Pexels'ten alınmıştır (Pexels Lisansı: ticari kullanım serbest, kaynak gösterme zorunlu değil).
+hero-yol.jpg      https://www.pexels.com/photo/36378946/
+hero-aile.jpg     https://www.pexels.com/photo/39219601/
+hero-anlasma.jpg  https://www.pexels.com/photo/8837510/
+kasko.jpg         https://www.pexels.com/photo/2553410/
+trafik.jpg        https://www.pexels.com/photo/15610996/
+dask.jpg          https://www.pexels.com/photo/14846410/
+konut.jpg         https://www.pexels.com/photo/30386991/
+isyeri.jpg        https://www.pexels.com/photo/8475171/
+seyahat.jpg       https://www.pexels.com/photo/6726195/
+tss.jpg           https://www.pexels.com/photo/39192383/
+oss.jpg           https://www.pexels.com/photo/6129106/
+bes.jpg           https://www.pexels.com/photo/5784940/
+danisman.jpg      https://www.pexels.com/photo/5816300/
+İkonlar ve 41sigorta logosu bu proje için özel çizilmiştir.
+Sigorta şirketi logoları ilgili şirketlerin tescilli markalarıdır; yalnızca çalışılan şirketleri göstermek amacıyla kullanılmaktadır.
+Slayt fotoğrafları (assets/img/slayt), Pexels:
+genc 12932548 · kasko 4429509 · trafik 15610996 · dask 23228111 · konut 8054853 · isyeri 36729739 · seyahat 5937249 · tss 6129444 · oss 7578797 · bes 5784940
+Kaza tespit tutanağı (assets/dosyalar) resmi "Maddi Hasarlı Trafik Kazası Tespit Tutanağı" alanları esas alınarak 41 Sigorta için yeniden dizilmiştir.
