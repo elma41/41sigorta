@@ -15,5 +15,6 @@ danisman.jpg      https://www.pexels.com/photo/5816300/
 İkonlar ve 41sigorta logosu bu proje için özel çizilmiştir.
 Sigorta şirketi logoları ilgili şirketlerin tescilli markalarıdır; yalnızca çalışılan şirketleri göstermek amacıyla kullanılmaktadır.
 Slayt fotoğrafları (assets/img/slayt), Pexels:
-genc 12932548 · kasko 4429509 · trafik 15610996 · dask 23228111 · konut 8054853 · isyeri 36729739 · seyahat 5937249 · tss 6129444 · oss 7578797 · bes 5784940
+genc 12932548 · kasko 7144213 · trafik 15610996 · dask 23228111 · konut 7642218 · isyeri 36729739 · seyahat 5937249 · tss 6129444 · oss 7578797 · bes 5784940
 Kaza tespit tutanağı (assets/dosyalar) resmi "Maddi Hasarlı Trafik Kazası Tespit Tutanağı" alanları esas alınarak 41 Sigorta için yeniden dizilmiştir.
+Hizmet bölgeleri haritası: il sınırları tr-geojson (github.com/cihadturhan/tr-geojson) verisinden çizilmiştir.
