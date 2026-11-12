@@ -43,6 +43,47 @@
     go(0);
   }
 
+
+  /* ana sayfa hizmet vitrini */
+  var vh = document.querySelector('.vhero');
+  if(vh){
+    var vts = vh.querySelectorAll('.vt'), vis = vh.querySelectorAll('.vi'), vds = vh.querySelectorAll('.vdots button'), vc = 0, vtm, VD = 6000;
+    var vform = vh.querySelector('.vform'), vsel = vform.querySelector('select'), touched = false;
+    vh.style.setProperty('--dur', VD + 'ms');
+    function vgo(i){
+      vts[vc].classList.remove('on'); vis[vc].classList.remove('on'); vds[vc].classList.remove('on');
+      vc = (i + vts.length) % vts.length;
+      vts[vc].classList.add('on'); vis[vc].classList.add('on');
+      var d = vds[vc]; void d.offsetWidth; d.classList.add('on');
+      if(d.scrollIntoView && window.innerWidth < 760){ var p = d.parentNode; p.scrollTo({left: d.offsetLeft - 20, behavior:'smooth'}); }
+      if(!touched) vsel.value = d.getAttribute('data-k');
+      clearTimeout(vtm); vtm = setTimeout(function(){ vgo(vc + 1); }, VD);
+    }
+    vds.forEach(function(d, i){ d.addEventListener('click', function(){ vgo(i); }); });
+    vh.querySelector('.prev').addEventListener('click', function(){ vgo(vc - 1); });
+    vh.querySelector('.next').addEventListener('click', function(){ vgo(vc + 1); });
+    var vsx = null, vvis = vh.querySelector('.vvis');
+    vvis.addEventListener('touchstart', function(e){ vsx = e.touches[0].clientX; }, {passive:true});
+    vvis.addEventListener('touchend', function(e){ if(vsx === null) return; var dx = e.changedTouches[0].clientX - vsx; if(Math.abs(dx) > 40) vgo(vc + (dx < 0 ? 1 : -1)); vsx = null; });
+    /* form doldurulurken vitrini durdur */
+    vform.addEventListener('focusin', function(){ clearTimeout(vtm); var d = vds[vc]; d.classList.remove('on'); void d.offsetWidth; d.classList.add('on'); d.style.setProperty('--dur','0ms'); });
+    vsel.addEventListener('change', function(){ touched = true; });
+    vform.addEventListener('submit', function(e){
+      e.preventDefault();
+      var err = vform.querySelector('.err'), ad = vform.ad.value.trim(), tel = vform.tel.value.trim(), msg = '';
+      if(ad.length < 3) msg = 'Lütfen adınızı ve soyadınızı yazın.';
+      else if(tel.replace(/\D/g,'').length < 10) msg = 'Lütfen geçerli bir telefon numarası yazın.';
+      else if(!vform.kvkk.checked) msg = 'Devam etmek için KVKK metnini onaylayın.';
+      err.textContent = msg; err.classList.toggle('show', !!msg);
+      if(msg) return;
+      var name = vsel.options[vsel.selectedIndex].text;
+      var t = ['Merhaba, 41sigorta.com üzerinden teklif almak istiyorum.', '', '*Hizmet:* ' + name, '*Ad Soyad:* ' + ad, '*Telefon:* ' + tel].join('\n');
+      window.open('https://wa.me/' + PHONE_WA + '?text=' + encodeURIComponent(t), '_blank', 'noopener');
+    });
+    document.addEventListener('visibilitychange', function(){ if(document.hidden) clearTimeout(vtm); });
+    vgo(0);
+  }
+
   /* logo bandı: sonsuz kaydırma için kopyala */
   document.querySelectorAll('.marquee').forEach(function(m){
     var t = m.querySelector('.track'); if(!t) return;
