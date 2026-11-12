@@ -593,3 +593,6 @@ section{position:relative}
 @keyframes kdot{0%,100%{transform:scale(1)}50%{transform:scale(1.18)}}
 @media (prefers-reduced-motion:reduce){.tmap .kc *{animation:none!important}}
 @media (max-width:900px){.mapcard{grid-template-columns:1fr;gap:20px}.tmap .lb .nm{display:none}.tmap .lb .pl{font-size:24px}}
+
+/* şirket logoları: başlıkla aynı hizada */
+.partners .marquee{width:min(1200px,100% - 40px);margin-inline:auto;-webkit-mask:linear-gradient(90deg,transparent,#000 5%,#000 95%,transparent);mask:linear-gradient(90deg,transparent,#000 5%,#000 95%,transparent)}
