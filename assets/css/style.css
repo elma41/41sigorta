@@ -948,9 +948,10 @@ img[src$="foto/konut.jpg"]:not(.vi){object-position:82% center}
 .p-hero .bg[style*="foto/konut.jpg"]{background-position:82% center}
 
 /* "30 şirketten teklif" rozeti: dairenin hemen altında, fotoğrafı kapatmadan, hafif nefes alır */
-.vbadge{right:auto;left:50%;bottom:-62px;white-space:nowrap;z-index:2;border:2px solid var(--g5);transform:translateX(-50%);animation:vbreath 3.6s ease-in-out infinite}
+.vbadge{right:auto;left:50%;bottom:-48px;white-space:nowrap;z-index:2;border:1.5px solid var(--g5);padding:6px 13px;gap:6px;font-size:12px;border-radius:12px;box-shadow:0 10px 24px -16px rgba(29,61,54,.45);transform:translateX(-50%);animation:vbreath 3.6s ease-in-out infinite}
 @keyframes vbreath{0%,100%{transform:translateX(-50%) scale(1)}50%{transform:translateX(-50%) scale(1.05)}}
-@media (max-width:760px){.vbadge{right:auto;bottom:-50px}.vvis{margin-bottom:48px}}
+.vbadge svg{width:16px;height:16px}.vbadge b{font-size:15px}
+@media (max-width:760px){.vbadge{right:auto;bottom:-42px;padding:5px 11px;font-size:11px}.vbadge svg{width:14px;height:14px}.vbadge b{font-size:13.5px}.vvis{margin-bottom:38px}}
 @media (prefers-reduced-motion:reduce){.vbadge{animation:none}}
 /* Telefonda yüzen düğmeler yazının üstüne binmesin: sosyal bağlantılar altbilgide, arama/WhatsApp alt çubukta zaten var */
 @media (max-width:700px){.float,.scrollnav{display:none}}
