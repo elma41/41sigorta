@@ -943,3 +943,6 @@ h3.t4{color:var(--g7);font-weight:500;letter-spacing:-.01em}
 .feat h3.t4{font-weight:500;color:var(--g7)}
 .footer h3.t4{font-weight:500}
 .vform .t3 small{color:var(--ink-2)}
+/* Konut fotoğrafında ev sağda kaldığı için kadrajı ortala */
+img[src$="foto/konut.jpg"]:not(.vi){object-position:72% center}
+.p-hero .bg[style*="foto/konut.jpg"]{background-position:72% center}
