@@ -50,6 +50,9 @@
     var vts = vh.querySelectorAll('.vt'), vis = vh.querySelectorAll('.vi'), vds = vh.querySelectorAll('.vdots button'), vc = 0, vtm, VD = 6000;
     var vform = vh.querySelector('.vform'), vsel = vform.querySelector('select'), touched = false;
     vh.style.setProperty('--dur', VD + 'ms');
+    /* diğer slayt görselleri ilk görsel yüklendikten sonra indirilir (sayfa hızı) */
+    var vload = function(){ vis.forEach(function(im){ if(im.dataset.src){ im.src = im.dataset.src; im.removeAttribute('data-src'); } }); };
+    if(document.readyState === 'complete') setTimeout(vload, 300); else window.addEventListener('load', function(){ setTimeout(vload, 300); });
     function vgo(i){
       vts[vc].classList.remove('on'); vis[vc].classList.remove('on'); vds[vc].classList.remove('on');
       vc = (i + vts.length) % vts.length;

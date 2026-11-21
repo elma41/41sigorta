@@ -1,4 +1,5 @@
 # 41sigorta.com - performans ayarları (sunucu desteklemiyorsa yok sayılır)
+AddType font/woff2 .woff2
 <IfModule mod_deflate.c>
   AddOutputFilterByType DEFLATE text/html text/css application/javascript image/svg+xml application/xml text/xml
 </IfModule>
@@ -10,6 +11,8 @@
   ExpiresByType text/css "access plus 1 week"
   ExpiresByType application/javascript "access plus 1 week"
   ExpiresByType application/pdf "access plus 1 month"
+  ExpiresByType font/woff2 "access plus 1 year"
+  ExpiresByType image/webp "access plus 1 month"
 </IfModule>
 ErrorDocument 404 /index.html
 
