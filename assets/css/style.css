@@ -951,7 +951,8 @@ img[src$="foto/konut.jpg"]:not(.vi){object-position:82% center}
 .vbadge{right:auto;left:50%;bottom:-48px;white-space:nowrap;z-index:2;border:1.5px solid var(--g5);padding:6px 13px;gap:6px;font-size:12px;border-radius:12px;box-shadow:0 10px 24px -16px rgba(29,61,54,.45);transform:translateX(-50%);animation:vbreath 3.6s ease-in-out infinite}
 @keyframes vbreath{0%,100%{transform:translateX(-50%) scale(1)}50%{transform:translateX(-50%) scale(1.05)}}
 .vbadge svg{width:16px;height:16px}.vbadge b{font-size:15px}
-@media (max-width:760px){.vbadge{right:auto;bottom:-42px;padding:5px 11px;font-size:11px}.vbadge svg{width:14px;height:14px}.vbadge b{font-size:13.5px}.vvis{margin-bottom:38px}}
+@media (max-width:760px){.vbadge{right:auto;bottom:-36px;padding:3px 9px;gap:4px;font-size:10px;font-weight:500;border-width:1px;border-radius:9px;box-shadow:0 6px 14px -10px rgba(29,61,54,.4);animation-name:vbreathS}.vbadge svg{width:12px;height:12px}.vbadge b{font-size:12px}.vvis{margin-bottom:30px}}
+@keyframes vbreathS{0%,100%{transform:translateX(-50%) scale(1)}50%{transform:translateX(-50%) scale(1.03)}}
 @media (prefers-reduced-motion:reduce){.vbadge{animation:none}}
 /* Telefonda yüzen düğmeler yazının üstüne binmesin: sosyal bağlantılar altbilgide, arama/WhatsApp alt çubukta zaten var */
 @media (max-width:700px){.float,.scrollnav{display:none}}
