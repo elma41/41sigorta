@@ -177,3 +177,23 @@
 
   var y = document.getElementById('yil'); if(y) y.textContent = new Date().getFullYear();
 })();
+
+/* yukarı git / aşağı git düğmeleri */
+(function(){
+  var ic = function(d){ return '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="' + d + '"/></svg>'; };
+  var nav = document.createElement('div'); nav.className = 'scrollnav';
+  nav.innerHTML = '<button type="button" class="su off" aria-label="Sayfanın başına git" title="Yukarı git">' + ic('M12 19V5M5 12l7-7 7 7') + '</button>' +
+                  '<button type="button" class="sd" aria-label="Sayfanın sonuna git" title="Aşağı git">' + ic('M12 5v14M5 12l7 7 7-7') + '</button>';
+  document.body.appendChild(nav);
+  var up = nav.querySelector('.su'), dn = nav.querySelector('.sd');
+  up.addEventListener('click', function(){ window.scrollTo({top:0, behavior:'smooth'}); });
+  dn.addEventListener('click', function(){ window.scrollTo({top:document.documentElement.scrollHeight, behavior:'smooth'}); });
+  var tick = false, upd = function(){
+    var y = window.scrollY, max = document.documentElement.scrollHeight - window.innerHeight;
+    up.classList.toggle('off', y < 400);
+    dn.classList.toggle('off', max - y < 400);
+    tick = false;
+  };
+  window.addEventListener('scroll', function(){ if(!tick){ tick = true; requestAnimationFrame(upd); } }, {passive:true});
+  window.addEventListener('resize', upd); upd();
+})();
