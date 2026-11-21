@@ -918,6 +918,16 @@ b,strong{font-weight:600}
 @media print{.scrollnav{display:none}}
 @media (max-width:1180px){.brand{margin-right:4px}.brand img{height:40px}.nav>a,.nav .dd>button{padding:10px 8px;font-size:14px}}
 .topbar .container{justify-content:flex-end}
+/* sosyal simgeler sabit düğmelerin üstünde */
+.float .f-ig,.float .f-fb{width:46px;height:46px;justify-self:center;align-self:center;margin:0 auto}
+.float .f-ig svg,.float .f-fb svg{width:22px;height:22px}
+.float .f-ig{background:linear-gradient(45deg,#f9a03f 0%,#e1306c 50%,#833ab4 100%)}
+.float .f-fb{background:#1877f2}
+@media (max-width:700px){
+  .float{display:flex;bottom:calc(86px + env(safe-area-inset-bottom));right:14px;gap:10px}
+  .float .f-wa,.float .f-tel{display:none}
+  .float .f-ig,.float .f-fb{width:42px;height:42px}
+}
 
 /* başlık sırası eşlemesi */
 h3.t4{font-family:var(--ff-h);line-height:1.15;letter-spacing:-.02em;color:var(--ink)}
