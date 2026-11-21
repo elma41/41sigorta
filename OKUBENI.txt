@@ -1,8 +1,8 @@
 41 SIGORTA WEB SITESI - YUKLEME
 1) Bu klasorun ICINDEKI tum dosyalari (index.html, .htaccess, robots.txt, sitemap.xml, hizmetler/, bolgeler/, assets/ ...)
    hostinginizdeki web kok klasorune (Plesk: httpdocs) yukleyin.
-2) Yayina almadan once doldurun:
-   - kvkk.html: [Acente ticari unvani] ve [Acik adres]
+2) Yayina almadan once doldurun (ticari unvan 41 Sigorta olarak yazildi):
+   - kvkk.html: acik adres (simdilik "Merkez: Kocaeli")
    - Alt bilgi: Sigorta acentesi levha kayit numarasi ("LEVHA KAYIT NO" yorumu)
 3) SEO: Yayindan sonra Google Search Console'a www.41sigorta.com'u ekleyip sitemap.xml'i gonderin;
    Google Isletme Profili (Google Haritalar) kaydi acip web sitesini baglayin.
