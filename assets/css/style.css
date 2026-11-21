@@ -873,6 +873,42 @@ b,strong{font-weight:600}
 .mbar .m-q{background:var(--g7)}
 .eyebrow{color:var(--g6)}
 .svc .more{color:var(--g6)}
+/* Türkiye hizmet haritası */
+.mapcard.trcard{grid-template-columns:1fr;gap:26px}
+.trcard .mapinfo{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:10px 40px;align-items:end}
+.trcard .mapinfo h2{grid-column:1}.trcard .mapinfo p{grid-column:1;margin:0}
+.trcard .mleg{grid-column:2;grid-row:1/3;align-self:center}
+.mleg .lk{background:var(--g5);box-shadow:0 0 0 4px rgba(63,138,116,.22)}
+.mleg .lm{background:#a9d3c2;border:1.5px solid #7fbca5}
+.mleg .lo{background:#dcede5;border:1.5px solid #c3e0d3}
+.tmap.tr .sea{fill:#eef5f3}
+.tmap.tr path.pv{fill:#dcede5;stroke:#fff;stroke-width:.8;transition:fill .25s}
+.tmap.tr path.pv:hover{fill:#c3e0d3}
+.tmap.tr a.pv path{fill:#a9d3c2;stroke:#fff;stroke-width:.8;transition:fill .25s}
+.tmap.tr a.pv:hover path,.tmap.tr a.pv:focus path{fill:#7fbca5}
+.tmap.tr a.pv.k path{fill:var(--g5)}
+.tmap.tr .net path{fill:none;stroke:var(--g6);stroke-width:1.4;stroke-linecap:round;stroke-dasharray:3 6;opacity:.75;animation:netflow 1.6s linear infinite;animation-delay:var(--d)}
+@keyframes netflow{to{stroke-dashoffset:-18}}
+.tmap.tr .cities{pointer-events:none}
+.tmap.tr .cities circle{fill:#fff;stroke:var(--g6);stroke-width:2}
+.tmap.tr .cities text{font-family:var(--ff-h);font-size:12.5px;font-weight:500;fill:var(--g8);text-anchor:middle;paint-order:stroke;stroke:#fff;stroke-width:3px}
+.tmap.tr .kc .dot{stroke:var(--g7);stroke-width:4}
+.tmap.tr .kc .pulse{stroke:var(--g5)}
+.tmap.tr .kl rect{fill:var(--g8)}
+.tmap.tr .kl text{font-size:13px;font-weight:500}
+@media (prefers-reduced-motion:reduce){.tmap.tr .net path{animation:none}}
+@media (max-width:900px){.trcard .mapinfo{grid-template-columns:1fr}.trcard .mleg{grid-column:1;grid-row:auto}.tmap.tr .cities text{font-size:17px}}
+/* çizim görseller */
+.vcirc{background:var(--g1)}
+.vi{object-fit:cover}
+.p-hero .bg{left:auto;right:max(20px,calc((100% - 1200px)/2));top:34px;bottom:auto;width:min(400px,32vw);height:auto;aspect-ratio:1;border-radius:50%;background-size:cover;opacity:1;-webkit-mask:none;mask:none;box-shadow:0 0 0 12px #fff,0 0 0 13px var(--g2),0 30px 60px -40px rgba(29,61,54,.5);z-index:1}
+.p-hero::after{display:none}
+.p-hero .container{padding-right:min(440px,36vw)}
+.card .lead-img{object-fit:contain;background:var(--g0);aspect-ratio:16/9}
+.why .media img{aspect-ratio:1;border-radius:50%;box-shadow:0 0 0 14px var(--g0),0 0 0 15px var(--g2),var(--shadow)}
+.orbit .core{background:#fff}
+@media (max-width:900px){.p-hero .bg{position:relative;right:auto;top:auto;width:220px;margin:0 auto 10px;display:block}.p-hero .container{padding-right:0}.p-hero{padding-top:30px}}
+@media (max-width:700px){.p-hero .bg{opacity:1;-webkit-mask:none;mask:none;width:200px}}
 
 /* başlık sırası eşlemesi */
 h3.t4{font-family:var(--ff-h);line-height:1.15;letter-spacing:-.02em;color:var(--ink)}
