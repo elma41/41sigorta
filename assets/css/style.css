@@ -917,6 +917,7 @@ b,strong{font-weight:600}
 @media (max-width:700px){.scrollnav{left:12px;bottom:calc(88px + env(safe-area-inset-bottom));gap:8px}.scrollnav button{width:40px;height:40px}}
 @media print{.scrollnav{display:none}}
 @media (max-width:1180px){.brand{margin-right:4px}.brand img{height:40px}.nav>a,.nav .dd>button{padding:10px 8px;font-size:14px}}
+.topbar .container{justify-content:flex-end}
 
 /* başlık sırası eşlemesi */
 h3.t4{font-family:var(--ff-h);line-height:1.15;letter-spacing:-.02em;color:var(--ink)}
