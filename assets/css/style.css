@@ -860,9 +860,8 @@ b,strong{font-weight:600}
   .p-hero::after{background:linear-gradient(180deg,rgba(255,255,255,.4),#fff 60%)}
   .footer{border-radius:24px 24px 0 0}
 }
-.header .container{width:min(1320px,100% - 40px)}
 .brand{margin-right:10px}
-@media (max-width:1380px){.nav>a,.nav .dd>button{padding:10px 10px;font-size:14.5px}.hcall{padding:0 8px;gap:0;font-size:0}.hcall i{width:30px;height:30px}}
+@media (max-width:1240px){.nav>a,.nav .dd>button{padding:10px 10px;font-size:14.5px}}
 .orbit .core{width:38%}
 /* erişilebilirlik: kontrast */
 :root{--ink-3:#5f6a76}
@@ -917,6 +916,7 @@ b,strong{font-weight:600}
 .scrollnav button.off{opacity:0;visibility:hidden;transform:scale(.8)}
 @media (max-width:700px){.scrollnav{left:12px;bottom:calc(88px + env(safe-area-inset-bottom));gap:8px}.scrollnav button{width:40px;height:40px}}
 @media print{.scrollnav{display:none}}
+@media (max-width:1180px){.brand{margin-right:4px}.brand img{height:40px}.nav>a,.nav .dd>button{padding:10px 8px;font-size:14px}}
 
 /* başlık sırası eşlemesi */
 h3.t4{font-family:var(--ff-h);line-height:1.15;letter-spacing:-.02em;color:var(--ink)}
