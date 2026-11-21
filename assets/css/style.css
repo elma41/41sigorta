@@ -903,7 +903,7 @@ b,strong{font-weight:600}
 .p-hero .bg{left:auto;right:max(20px,calc((100% - 1200px)/2));top:34px;bottom:auto;width:min(400px,32vw);height:auto;aspect-ratio:1;border-radius:50%;background-size:cover;opacity:1;-webkit-mask:none;mask:none;box-shadow:0 0 0 12px #fff,0 0 0 13px var(--g2),0 30px 60px -40px rgba(29,61,54,.5);z-index:1}
 .p-hero::after{display:none}
 .p-hero .container{padding-right:min(440px,36vw)}
-.card .lead-img{object-fit:contain;background:var(--g0);aspect-ratio:16/9}
+.card .lead-img{object-fit:cover;background:var(--g0);aspect-ratio:16/9}
 .why .media img{aspect-ratio:1;border-radius:50%;box-shadow:0 0 0 14px var(--g0),0 0 0 15px var(--g2),var(--shadow)}
 .orbit .core{background:#fff}
 @media (max-width:900px){.p-hero .bg{position:relative;right:auto;top:auto;width:220px;margin:0 auto 10px;display:block}.p-hero .container{padding-right:0}.p-hero{padding-top:30px}}
