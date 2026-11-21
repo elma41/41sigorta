@@ -1,4 +1,4 @@
-Sitedeki görseller (assets/img/cizim) bu proje için özel çizilmiş SVG illüstrasyonlardır.
+Sitedeki ürün fotoğrafları (assets/img/foto) Unsplash'ten alınmıştır (Unsplash Lisansı: ücretsiz ticari kullanım, kaynak belirtme zorunlu değil).
 og-cover.jpg (sosyal medya paylaşım görseli) Pexels fotoğrafından hazırlanmıştır.
 İkonlar ve 41sigorta logosu bu proje için özel çizilmiştir.
 Sigorta şirketi logoları ilgili şirketlerin tescilli markalarıdır; yalnızca çalışılan şirketleri göstermek amacıyla kullanılmaktadır.
