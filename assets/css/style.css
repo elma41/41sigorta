@@ -965,7 +965,7 @@ img[src$="foto/konut.jpg"]:not(.vi){object-position:82% center}
   .mbar .m-ig,.mbar .m-tel,.mbar .m-wa,.mbar .m-fb{width:46px;height:46px;padding:0;border-radius:50%;font-size:0;gap:0;color:#fff;justify-self:center;box-shadow:0 10px 22px -12px rgba(0,0,0,.45)}
   .mbar .m-ig{background:linear-gradient(45deg,#f9a03f 0%,#e1306c 50%,#833ab4 100%)}
   .mbar .m-fb{background:#1877f2}
-  .mbar .m-tel{background:var(--g7)}
+  .mbar .m-tel{background:#1e3a8a}
   .mbar .m-wa{background:var(--wa)}
   .mbar .m-ig svg,.mbar .m-fb svg,.mbar .m-tel svg,.mbar .m-wa svg{width:22px;height:22px}
   .mbar .m-q{min-height:46px;border-radius:999px}
