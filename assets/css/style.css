@@ -956,3 +956,13 @@ img[src$="foto/konut.jpg"]:not(.vi){object-position:82% center}
 @media (prefers-reduced-motion:reduce){.vbadge{animation:none}}
 /* Telefonda yüzen düğmeler yazının üstüne binmesin: sosyal bağlantılar altbilgide, arama/WhatsApp alt çubukta zaten var */
 @media (max-width:700px){.float,.scrollnav{display:none}}
+
+/* Telefonda Instagram ve Facebook: alt çubukta küçük simgeler (yüzen düğmeler gizli kalır, yazıya binmez) */
+@media (max-width:1100px){
+  .mbar{grid-template-columns:1fr 1fr 1.2fr 44px 44px}
+  .mbar .m-ig,.mbar .m-fb{padding:0;color:#fff;align-self:center;justify-self:center;width:44px;height:44px;border-radius:50%}
+  .mbar .m-ig{background:linear-gradient(45deg,#f9a03f 0%,#e1306c 50%,#833ab4 100%)}
+  .mbar .m-fb{background:#1877f2}
+  .mbar .m-ig svg,.mbar .m-fb svg{width:21px;height:21px}
+}
+@media (min-width:1101px){.mbar .m-ig,.mbar .m-fb{display:none}}
