@@ -957,12 +957,17 @@ img[src$="foto/konut.jpg"]:not(.vi){object-position:82% center}
 /* Telefonda yüzen düğmeler yazının üstüne binmesin: sosyal bağlantılar altbilgide, arama/WhatsApp alt çubukta zaten var */
 @media (max-width:700px){.float,.scrollnav{display:none}}
 
-/* Telefonda Instagram ve Facebook: alt çubukta küçük simgeler (yüzen düğmeler gizli kalır, yazıya binmez) */
+/* Telefon alt çubuğu: yandaki yuvarlak düğmeler gibi; "Teklif Al" tam ortada */
 @media (max-width:1100px){
-  .mbar{grid-template-columns:1fr 1fr 1.2fr 44px 44px}
-  .mbar .m-ig,.mbar .m-fb{padding:0;color:#fff;align-self:center;justify-self:center;width:44px;height:44px;border-radius:50%}
+  .mbar{grid-template-columns:46px 46px 1fr 46px 46px;align-items:center;gap:8px}
+  .mbar a{order:0}
+  .mbar .m-ig{order:1}.mbar .m-tel{order:2}.mbar .m-q{order:3}.mbar .m-wa{order:4}.mbar .m-fb{order:5}
+  .mbar .m-ig,.mbar .m-tel,.mbar .m-wa,.mbar .m-fb{width:46px;height:46px;padding:0;border-radius:50%;font-size:0;gap:0;color:#fff;justify-self:center;box-shadow:0 10px 22px -12px rgba(0,0,0,.45)}
   .mbar .m-ig{background:linear-gradient(45deg,#f9a03f 0%,#e1306c 50%,#833ab4 100%)}
   .mbar .m-fb{background:#1877f2}
-  .mbar .m-ig svg,.mbar .m-fb svg{width:21px;height:21px}
+  .mbar .m-tel{background:var(--g7)}
+  .mbar .m-wa{background:var(--wa)}
+  .mbar .m-ig svg,.mbar .m-fb svg,.mbar .m-tel svg,.mbar .m-wa svg{width:22px;height:22px}
+  .mbar .m-q{min-height:46px;border-radius:999px}
 }
 @media (min-width:1101px){.mbar .m-ig,.mbar .m-fb{display:none}}
